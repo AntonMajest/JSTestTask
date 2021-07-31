@@ -1,0 +1,129 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 919px;
+    flex-wrap: wrap;
+    
+}
+.dice {
+    display: inline-flex;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border: solid 5px black;
+    border-radius: 30px;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 5px 15px;
+}
+
+.dice_dot::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.dice_one {
+    order: 6;
+    justify-content: center;
+    align-items: center;
+}
+
+.dice_two {
+    order: 2;
+    justify-content: space-between;
+}
+
+.dice_two .dice_dot:nth-child(1){
+    align-self: flex-end;
+}
+
+.dice_three {
+    order: 3;
+    justify-content: space-between;
+}
+
+.dice_three .dice_dot:nth-child(1){
+    align-self: flex-end;
+}
+
+.dice_three .dice_dot:nth-child(2){
+    align-self: center;
+}
+
+.dice_four {
+ 
+    order: 4;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.dice_four .dice_dot {
+    width: 50%;
+}
+
+.dice_four .dice_dot:nth-child(even){
+    text-align: right;
+}
+
+.dice_five {
+    order: 2;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.dice_five .dice_dot:nth-child(3){
+    width: 100%;
+    text-align: center;
+}
+
+.dice_six {
+    order: -1;
+  
+    flex-flow: wrap column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+@media screen and  (max-width:707px) {
+    .dice_dot::before{
+        width: 25px;
+        height: 25px;
+    }   
+    .dice {
+        width: 144px;
+        height: 144px;
+        margin: 5px 5px;
+    }
+
+}
+@media screen and  (max-width:479px) {
+    .dice_dot::before{
+        width: 15px;
+        height: 15px;
+    }   
+    .dice {
+        width: 120px;
+        height: 120px;
+        margin: 5px 1px;
+    }
+
+}
+
+
+/* 
+    width: 120px;
+    height: 120px;
+    margin: 5px 1px; */
