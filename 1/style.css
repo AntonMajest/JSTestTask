@@ -109,6 +109,7 @@
     }
 
 }
+
 @media screen and  (max-width:479px) {
     .dice_dot::before{
         width: 15px;
@@ -122,8 +123,3 @@
 
 }
 
-
-/* 
-    width: 120px;
-    height: 120px;
-    margin: 5px 1px; */
