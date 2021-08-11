@@ -44,7 +44,7 @@
     justify-content: space-between;
 }
 
-.dice_two .dice_dot:nth-child(1){
+.dice_two .dice_dot:nth-child(2){
     align-self: flex-end;
 }
 
@@ -53,13 +53,15 @@
     justify-content: space-between;
 }
 
-.dice_three .dice_dot:nth-child(1){
-    align-self: flex-end;
-}
+
 
 .dice_three .dice_dot:nth-child(2){
     align-self: center;
 }
+.dice_three .dice_dot:nth-child(3){
+    align-self: flex-end;
+}
+
 
 .dice_four {
  
